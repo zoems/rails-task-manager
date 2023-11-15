@@ -1,0 +1,9 @@
+<%= form_with model: task do |f| %>
+  <%= f.label "Task Name" %>
+  <%= f.text_field :name, placeholder: "Go to the beach.." %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+  <%= f.submit 'Submit' %>
+<% end %>
